@@ -11,10 +11,8 @@ namespace MyUsing
         }
         private static void Test()
         {
-            using (Person p = new Person { Name = "Tom" })
-            {
-                Console.WriteLine($"Some actions {p.Name}");
-            }
+            using Person p = new Person { Name = "Tom" } ;
+            Console.WriteLine($"Some actions {p.Name}");
             Console.WriteLine("End method");
         }
     }
